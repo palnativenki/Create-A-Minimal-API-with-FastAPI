@@ -1,0 +1,12 @@
+uvicorn address_book.main:app --reload
+
+
+POST /addresses/
+{
+  "name": "Home",
+  "latitude": 40.7128,
+  "longitude": -74.0060
+}
+
+
+GET /addresses/nearby?lat=40.71&lon=-74.00&distance_km=5
